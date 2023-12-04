@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'IBM Plex mono';
   src: url(./IBMPlexMono-Regular.woff) format('woff');
+  /* url(./IBMPlexMono-Regular.ttf) format('trutype'); */
   font-weight: normal;
   font-display: swap;
 }
@@ -8,6 +9,7 @@
 @font-face {
   font-family: 'IBM Plex mono';
   src: url(./IBMPlexMono-Bold.woff) format('woff');
+  /* url(./IBMPlexMono-Bold.ttf) format('trutype'); */
   font-weight: bold;
   font-display: swap;
 }
