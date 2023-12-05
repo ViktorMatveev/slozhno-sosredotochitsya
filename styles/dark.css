@@ -6,30 +6,17 @@
 
 .page.theme_dark {
   --bg-color: #000028;
-  --font-color: #f1b2ce;
+  --header-title-color: #db00ff;
+  --header-accent-color: #ff0070;
+  --subtitle-font-color: #000028;
+  --subtitle-background-color: #ff0070;
+  --main-font-color: #f1b2ce;
   --accent-color: #ff0070;
+  --btn-hover-color: rgba(255, 0, 112, 0.4);
   --main-font: 'IBM Plex mono';
   --main-font-size: 18px;
-  --header-font-color: #db00ff;
   background-image: url(../images/cover-image-dark.png);
-}
-
-.page.theme_dark .decorated-zone::before {
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
-}
-
-.page.theme_dark .decorated-zone::after {
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
-}
-
-.page.theme_dark .header__theme-menu-button {
-  color: var(--accent-color);
-}
-
-.page.theme_dark .content__title {
-  color: var(--accent-color);
+  --element-visible: visible;
 }
 
 /* сохраните этот селектор в приведённом виде.
@@ -40,18 +27,17 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #000028;
-    --font-color: #f1b2ce;
+    --header-title-color: #db00ff;
+    --header-accent-color: #ff0070;
+    --subtitle-font-color: #000028;
+    --subtitle-background-color: #ff0070;
+    --main-font-color: #f1b2ce;
     --accent-color: #ff0070;
-    --main-font: 'IBM Plex mono';
-    --main-font-size: 18px;
-    --header-font-color: #db00ff;
+    --btn-hover-color: rgba(255, 0, 112, 0.4);
+    --element-visible: visible;
   }
 
   .page {
     background-image: url(../images/cover-image-dark.png);
   }
-
-  /* .page .content__title {
-    color: var(--accent-color);
-  } */
 }

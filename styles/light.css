@@ -10,93 +10,31 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-color: #fff1f7;
-  --font-color: #353430;
-  --accent-color: #ff8dcb;
-  --header-font-color: #ffc2e6;
+  --header-title-color: #ffc2e6;
+  --header-accent-color: #ff8dcb;
+  --subtitle-font-color: #353430;
+  --subtitle-background-color: #ff8dcb;
+  --main-font-color: #353430;
+  --accent-color: #353430;
+  --btn-hover-color: rgba(50, 49, 45, 0.4);
   background-image: url(../images/cover-image-light.png);
-}
-
-.page.theme_light .header__decoration {
-  display: none;
-}
-
-.title-decor {
-  color: #000028;
-  background-color: var(--accent-color);
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.page.theme_light .content__title {
-  color: var(--font-color);
-}
-
-.page.theme_light .header__theme-menu-button {
-  color: var(--font-color);
-}
-
-.page.theme_light
-  .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
-  outline: 1px solid rgba(50, 49, 45, 0.4);
-}
-
-.page.theme_light .decorated-zone::before {
-  border-bottom: 1px solid var(--font-color);
-  border-left: 1px solid var(--font-color);
-}
-
-.page.theme_light .decorated-zone::after {
-  border-top: 1px solid var(--font-color);
-  border-right: 1px solid var(--font-color);
+  --element-visible: hidden;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: #fff1f7;
-    --font-color: #353430;
-    --accent-color: #ff8dcb;
-    --header-font-color: #ffc2e6;
+    --header-title-color: #ffc2e6;
+    --header-accent-color: #ff8dcb;
+    --subtitle-font-color: #353430;
+    --subtitle-background-color: #ff8dcb;
+    --main-font-color: #353430;
+    --accent-color: #353430;
+    --btn-hover-color: rgba(50, 49, 45, 0.4);
+    --element-visible: hidden;
   }
 
   .page {
     background-image: url(../images/cover-image-light.png);
-  }
-
-  .page .header__decoration {
-    display: none;
-  }
-
-  .title-decor {
-    color: #000028;
-    background-color: var(--accent-color);
-    font-weight: 700;
-    line-height: 1.3;
-  }
-
-  .page.content__title {
-    color: var(--font-color);
-  }
-
-  .page .header__theme-menu-button {
-    color: var(--font-color);
-  }
-
-  .page
-    .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
-    outline: 1px solid rgba(50, 49, 45, 0.4);
-  }
-
-  .page .decorated-zone::before {
-    border-bottom: 1px solid var(--font-color);
-    border-left: 1px solid var(--font-color);
-  }
-
-  .page .decorated-zone::after {
-    border-top: 1px solid var(--font-color);
-    border-right: 1px solid var(--font-color);
-  }
-
-  .page .content__title {
-    color: var(--font-color);
   }
 }
